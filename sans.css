@@ -2,6 +2,7 @@ body {
     background-color: black;
     display: flex;
     justify-content: center;
+    /* zoom: 1.5; */
 }
 .soul {
     display:flex;
@@ -26,7 +27,6 @@ body {
     /* border: 5px solid orange; */
     aspect-ratio: 4/3;
     position: fixed;
-    /* transform: scale(100vw/480); */
     opacity: 0;
     visibility: hidden;
     animation: appear 0.25s linear 1s forwards,

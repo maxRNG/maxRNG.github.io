@@ -5,8 +5,6 @@
         <title>good time simulator</title>
     </head>
     <body>
-        <audio class="click" autoplay src="sounds/snd_noise.mp3">
-        </audio>
         <div class="intro">
             <img class="soul" src="images/soul.png">
         </div>
@@ -64,5 +62,16 @@
                 <img class="box" id="mercy" src="images/mercy.png">
             </div>
         </div>
+        <script>
+            // function zoom() {
+            //     // const b = document.getElementsByTagName("body");
+            //     const scaleFactor = window.innerWidth / 640 / 2;
+            //     console.log(scaleFactor);
+            //     document.body.style.backround-color = "red";
+            // }
+            // window.onload = zoom();
+            
+            document.body.style.transform = `scale(${Math.min(window.innerWidth / 640, window.innerHeight / 480)})`;
+        </script>
     </body>
 </html>
