@@ -70,11 +70,11 @@ body {
     animation: appear 0s linear 1.5s forwards;
 }
 @font-face {
-    font-family: pixel-sans;
+    font-family: "undertale-sans";
     src: url(misc/pixel-comic-sans-undertale-sans-font.ttf);
 }
 p {
-    font-family: pixel-sans, "Comic Sans MS", "Comic Sans", "Chalkboard" cursive;
+    font-family: "undertale-sans", "Comic Sans MS", "Comic Sans", "Chalkboard", cursive;
     font-size: large;
     font-weight: bold;
     width: 0%;
