@@ -165,25 +165,25 @@ em {
     position: absolute;
     top: -10%;
     left: 15%;
-    animation: typing 1s steps(22, end) 9s forwards;
+    animation: typing 1s steps(20, end) 9s forwards;
 }
 #line4b {
     position: absolute;
     top: 5%;
     left: 15%;
-    animation: typing 1s steps(20, end) 10s forwards;
+    animation: typing 1s steps(15, end) 10s forwards;
 }
 #line4c {
     position: absolute;
     top: 20%;
     left: 15%;
-    animation: typing 0.75s steps(9, end) 10.75s forwards;
+    animation: typing 0.75s steps(19, end) 10.75s forwards;
 }
 #line4d {
     position: absolute;
     top: 35%;
     left: 15%;
-    animation: typing 0.75s steps(9, end) 11.5s forwards;
+    animation: typing 0.75s steps(19, end) 11.5s forwards;
 }
 .box {
     padding-bottom: 10px;
