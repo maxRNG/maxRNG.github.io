@@ -2,7 +2,7 @@ body {
     background-color: black;
     display: flex;
     justify-content: center;
-    zoom: min(calc(var(--h) / 480), calc(var(--w) / 640));
+    transform: scale(min(calc(var(--h) / 480), calc(var(--w) / 640)));
 }
 @property --w_raw {
     syntax: '<length>';
