@@ -1,0 +1,208 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.soul {
+    display:flex;
+    margin: auto;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 5%;
+    animation: vanish 0s linear 0.07s forwards,
+                appear 0s linear 0.13s forwards,
+                vanish 0s linear 0.2s forwards,
+                appear 0s linear 0.27s forwards,
+                vanish 0s linear 0.33s forwards,
+                appear 0s linear 0.4s forwards,
+                slide 0.5s linear 0.5s forwards,
+                vanish 0.25s linear 1s forwards;
+}
+.click {
+    visibility: visible;
+}
+.scene {
+    overflow: hidden;
+    /* border: 5px solid orange; */
+    aspect-ratio: 4/3;
+    position: fixed;
+    /* transform: scale(100vw/480); */
+    opacity: 0;
+    visibility: hidden;
+    animation: appear 0.25s linear 1s forwards,
+                vanish 0s linear 8s forwards;
+    margin: auto;
+}
+.scene2 {
+    overflow: hidden;
+    /* border: 5px solid purple; */
+    aspect-ratio: 4/3;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    animation: appear 0s linear 8.5s forwards;
+    margin: auto;
+}
+.sans {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    margin-top: 5%;
+}
+.sleep {
+    object-fit: contain;
+    grid-column: 2;
+    /* border: 5px solid blue; */
+}
+.wake {
+    object-fit: contain;
+    grid-column: 2;
+    /* border: 5px solid blue; */
+}
+.speech {
+    grid-column: 3;
+    /* border: 5px solid red; */
+    position: relative;
+    text-align: left;
+}
+.bubble {
+    visibility: hidden;
+    animation: appear 0s linear 1.5s forwards;
+}
+p {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: large;
+    font-weight: bold;
+    width: 0%;
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+    overflow: hidden;
+    white-space: nowrap;
+}
+em {
+    font-style: normal;
+    color: red;
+}
+@keyframes slide {
+    100% {
+        margin-top: 25%;
+        margin-left: -25%;
+    }
+}
+@keyframes typing {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@keyframes appear {
+    to {
+        opacity: 100;
+        visibility: visible;
+    }
+}
+@keyframes vanish {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+#line1a {
+    position: absolute;
+    top: -10%;
+    left: 15%;
+    animation: typing 1s steps(16, end) 1.5s forwards,
+     vanish 0s linear 3s forwards;
+}
+#line1b {
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    animation: typing 1s steps(12, end) 2s forwards,
+     vanish 0s linear 3s forwards;
+}
+#line2a {
+    position: absolute;
+    top: -10%;
+    left: 15%;
+    animation: typing 1s steps(18, end) 3.5s forwards,
+     vanish 0s linear 5.7s forwards;
+}
+#line2b {
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    animation: typing 1s steps(11, end) 4.2s forwards,
+     vanish 0s linear 5.7s forwards;
+}
+#line2c {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    animation: typing 1s steps(11, end) 4.7s forwards,
+     vanish 0s linear 5.7s forwards;
+}
+#line3a {
+    position: absolute;
+    top: -10%;
+    left: 15%;
+    animation: typing 1s steps(19, end) 6s forwards,
+     vanish 0s linear 8s forwards;
+}
+#line3b {
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    animation: typing 1s steps(16, end) 7s forwards,
+     vanish 0s linear 8s forwards;
+}
+#line4a {
+    position: absolute;
+    top: -10%;
+    left: 15%;
+    animation: typing 1s steps(22, end) 9s forwards;
+}
+#line4b {
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    animation: typing 1s steps(20, end) 10s forwards;
+}
+#line4c {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    animation: typing 0.75s steps(9, end) 10.75s forwards;
+}
+#line4d {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    animation: typing 0.75s steps(9, end) 11.5s forwards;
+}
+.box {
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.stats {
+    position: absolute;
+    bottom: 12%;
+}
+.bottombar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.nurture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 5%;
+}
