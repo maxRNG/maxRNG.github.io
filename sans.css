@@ -3,6 +3,8 @@ body {
     display: flex;
     justify-content: center;
     transform: scale(min(calc(var(--h) / 480), calc(var(--w) / 640)));
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
 }
 @property --w_raw {
     syntax: '<length>';
@@ -22,8 +24,8 @@ body {
     display:flex;
     margin: auto;
     position: absolute;
-    margin-top: 5%;
-    margin-left: 5%;
+    margin-top: 0%;
+    margin-left: 0%;
     animation: vanish 0s linear 0.07s forwards,
                 appear 0s linear 0.13s forwards,
                 vanish 0s linear 0.2s forwards,
